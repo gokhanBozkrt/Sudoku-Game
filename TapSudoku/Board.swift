@@ -21,11 +21,6 @@ struct Board: Equatable {
         case extreme = 29
     }
     
-    
-    
-    
-    
-    
     let size = 9
     let difficulty: Difficulty
     var fullBoard = [[Int]]()
@@ -38,8 +33,7 @@ struct Board: Equatable {
         let rows = Array([[0, 1, 2].shuffled(), [3, 4, 5].shuffled(), [6, 7, 8].shuffled()].shuffled()).joined()
         let columns = Array([[0, 1, 2].shuffled(), [3, 4, 5].shuffled(), [6, 7, 8].shuffled()].shuffled()).joined()
 
-        
-        
+    
         for row in rows {
             var newRow = [Int]()
             
